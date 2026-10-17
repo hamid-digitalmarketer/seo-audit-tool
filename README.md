@@ -92,9 +92,14 @@ Tests cover: missing title (critical), noindex detection, missing alt text, mult
 - Scheduled audits with historical comparison
 - CI via GitHub Actions
 
+## Related projects
+
+- [seo-doctor](https://github.com/hamid-digitalmarketer/seo-doctor) — automated technical SEO site crawler (broken links, canonicals, redirect chains)
+- [ecommerce-seo-optimizer](https://github.com/hamid-digitalmarketer/ecommerce-seo-optimizer) — on-page product listing audit and optimization for e-commerce
+
 ## License
 
-MIT (add a `LICENSE` file before commercial use if required by your use case).
+MIT — see [LICENSE](LICENSE).
 
 ---
 
@@ -102,7 +107,7 @@ MIT (add a `LICENSE` file before commercial use if required by your use case).
 
 Digital Marketing | SEO | Performance Marketing | E-commerce | Web Development
 
-- Portfolio: [https://abouthamid.web.app/](https://abouthamid.web.app/)
+- Portfolio: [https://hamid-resume.web.app/](https://hamid-resume.web.app/)
 - LinkedIn: [https://www.linkedin.com/in/muhammad-hamid-digital-marketing/](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)
 - WhatsApp: [https://wa.me/923167417135](https://wa.me/923167417135)
 
