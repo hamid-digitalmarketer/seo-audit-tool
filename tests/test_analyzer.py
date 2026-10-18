@@ -71,8 +71,15 @@ def test_duplicate_titles_across_pages():
 
 
 def test_aggregate_counts():
-    p1 = analyze_html(BAD_HTML, "https://example.com/a")
-    p2 = analyze_html(BAD_HTML, "https://example.com/b")
+    critical_html = "<html><body><h1>Page without title</h1></body></html>"
+    p1 = analyze_html(critical_html, "https://example.com/a")
+    p2 = analyze_html(critical_html, "https://example.com/b")
     result = aggregate([p1, p2])
     assert result["total_pages"] == 2
     assert result["issue_counts"]["critical"] >= 2
+
+    # Also verify warning counts with BAD_HTML
+    p3 = analyze_html(BAD_HTML, "https://example.com/c")
+    p4 = analyze_html(BAD_HTML, "https://example.com/d")
+    result_bad = aggregate([p3, p4])
+    assert result_bad["issue_counts"]["warning"] >= 2
